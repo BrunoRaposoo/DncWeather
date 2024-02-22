@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+#header {
+  padding: 21px 56px;
+  background-color: #0C70F2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header-title {
+  font-size: 50px;
+  font-weight: 800;
+  color: #FFF;
+}
+
+#header-options {
+  display: flex;
+  gap: 45px;
+  cursor: pointer;
+}
+
+#header-options p {
+  font-size: 25px;
+  font-weight: 800;
+  color: #FFF;
+  transition-duration: 200ms;
+}
+
+#header-options p:hover {
+  color: #BABABA;
+  transition-duration: 200ms;
+}
+
+main {
+  background-color: #F2F2F2;
+}
+
+#description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 120px;
+  margin-bottom: 150px;
+}
+
+#description p {
+  font-size: 50px;
+  font-weight: 800;
+  color: #000;
+}
+
+#description img {
+  transform: translateY(-25px);
+}
+
+.form {
+  max-width: 60%;
+  margin: auto;
+  background-color: #FFF;
+  padding: 140px 125px 74px 100px;
+  border-radius: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.form-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-options label {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.form-options input {
+  padding: 16px 32px;
+  border: none;
+  border-radius: 10px;
+  background-color: #F2F2F2;
+  color: #000;
+  font-size: 20px;
+  outline: none;
+}
+
+.form-options input::placeholder {
+  font-size: 20px;
+  color: #39393980;
+}
+
+.form-options #long-lat {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.form-options #long-lat input {
+  width: 100%;
+}
+
+button {
+  margin-top: 100px;
+  background-color: #0C70F2;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px 250px;
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 600;
+  box-shadow: 0 6px 4px #0C70F240;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.2);
+  transform: scale(1.05);
+  transition-duration: 200ms;
+}
+
+.cep-result {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+}
+
+.titles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.titles span {
+  font-size: 50px;
+  font-weight: 800  ;
+}
+
+table {
+  width: 70%;
+  margin: auto;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+thead {
+  height: 72px;
+  background-color: #0C70F2;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+th:first-child {
+  border-top-left-radius: 30px;
+}
+
+th:last-child {
+  border-top-right-radius: 30px;
+}
+
+tbody {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  color: #1F1F1F;
+  background-color: #FFF;
+}
+
+td {
+  padding: 23px 0;
+}
+
+td:first-child {
+  border-bottom-left-radius: 30px;
+}
+
+td:last-child {
+  border-bottom-right-radius: 30px;
+}
+
+.weather {
+  margin-top: 150px;
+  padding-bottom: 50px;
+}
+
+#weather-result {
+  width: 70%;
+  margin: auto;
+  background-color: #FFF;
+  padding: 23px 0;
+  text-align: center;
+  border: 1px solid #0C70F2 ;
+  border-radius: 30px;
+}
+
+#weather-result p {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+  background-color: #0C70F2;
+  color: #FFF;
+  padding: 32px 30px;
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 150px;
+  transition-duration: 200ms;
+}
+
+footer p {
+  cursor: pointer;
+}
+
+footer p:hover {
+  color: #BABABA;
+  transition-duration: 200ms;
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #F2F2F2;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.circle #date {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.circle .temp {
+  display: flex;
+  transform: translateX(5px);
+}
+
+.day-element {
+  display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+  #header {
+    padding: 10px 10px;
+    width: 100%;
+  }
+
+  #header-title {
+    font-size: 20px;
+  }
+  
+  #header-options {
+    gap: 12px;
+  }
+  
+  #header-options p {
+    font-size: 12px;
+  }
+  
+  #description {
+    gap: 12px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+  }
+  
+  #description p {
+    font-size: 20px;
+  }
+  
+  #description img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .form {
+    max-width: 90%;
+    padding: 20px 20px 20px 20px;
+  }
+  
+  form {
+    gap: 20px;
+  }
+  
+  .form-options {
+    gap: 10px;
+  }
+  
+  .form-options label {
+    font-size: 16px;
+  }
+  
+  .form-options input {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+  
+  .form-options input::placeholder {
+    font-size: 14px;
+  }
+  
+  .form-options #long-lat {
+    gap: 8px;
+  }
+  
+  button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 20px;
+  }
+
+  .cep-result {
+    margin-top: 50px;
+  }
+  
+  .titles {
+    gap: 16px;
+  }
+  
+  .titles span {
+    font-size: 20px;
+    font-weight: 800  ;
+  }
+
+  .titles img {
+    width: 50px;
+    height: 50px;
+  }
+
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+    
+  thead {
+    height: 60px;
+    font-size: 16px;
+  }
+
+  tr {
+    width: 20%;
+  }
+
+  th {
+    width: 0%;
+  }
+    
+  tbody {
+    font-size: 14px;
+  }
+
+  .weather {
+    margin-top: 50px;
+    padding-bottom: 0;
+  }
+  
+  #weather-result {
+    width: 90%;
+    padding: 20px 0;
+  }
+  
+  #weather-result p {
+    font-size: 18px;
+    padding: 0 12px;
+  }
+  
+  footer {
+    gap: 10px;
+    padding: 12px 20px;
+    font-size: 12px;
+    margin-top: 50px;
+  }
+  
+  .circle #date {
+    font-size: 16px;
+  }
+  
+  .circle .temp {
+    font-size: 14px;
+    transform: translateX(5px);
+  }
+  
+}

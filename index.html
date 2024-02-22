@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>DncWeather</title>
+</head>
+<body>
+  <main>
+    <header id="header">
+      <span id="header-title">DncWeather</span>
+      <div id="header-options">
+        <p>Endereços</p>
+        <p>Previsão do tempo</p>
+      </div>
+    </header>
+
+    <div id="description">
+      <p>
+        Descubra Mais com Precisão: <br>
+        Previsões do Tempo e endereços <br>
+        em tempo real.
+      </p>
+      <img src="./assets/cloud.svg" alt="nuvem">
+    </div>  
+
+    <div class="form">
+      <form action="">
+        <div class="form-options">
+          <label for="">Primeiro Nome: </label>
+          <input type="text" placeholder="Insira seu primeiro nome">  
+        </div>
+        <div class="form-options">
+          <label for="">E-mail: </label>
+          <input type="email" placeholder="Insira seu e-mail">
+        </div>
+        <div class="form-options">
+          <label for="">Digite o CEP: </label>
+          <input type="number" placeholder="Insira o CEP" id="cep" required>
+        </div>
+        <div class="form-options">
+          <label for="">Digite a latitude e longitude para saber a previsão: </label>
+          <div id="long-lat">
+            <input type="text" placeholder="Latitude" id="latitude" required>
+            <input type="text" placeholder="Longitude" id="longitude" required>
+          </div>
+        </div>
+
+        <button type="button" id="button-type">Acessar</button>
+      </form>
+    </div>
+
+    <section class="cep-result">
+      <div class="titles">
+        <span>Resultado da busca por CEP:</span>
+        <img src="./assets/cep.svg" alt="endereço">
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Logradouro/nome</th>
+            <th>Bairro/Distrito</th>
+            <th>Localidade/UF</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="logradouro">xxxx</td>
+            <td id="bairro">xxxx</td>
+            <td id="uf">xx</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="weather">
+      <div class="titles">
+        <span>Previsão do tempo na região:</span>
+        <img src="./assets/weather.svg" alt="endereço">
+      </div>
+
+      <div id="weather-result">
+        <p>Previsão de tempo de acordo com a região: </p>
+        <div id="day"></div>
+        <div id="results"></div>
+      </div>
+
+    </section>
+
+    <footer>
+      <p>Termos de Uso</p>
+      <span>|</span>
+      <p>Política de Privacidade</p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
