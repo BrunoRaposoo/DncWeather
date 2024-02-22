@@ -1,4 +1,4 @@
-<h1 align="center"> DncWeather 🌦️</h1>
+<h1 align="center"> Desafio 2 - DncWeather 🌦️</h1>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -24,7 +24,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Projeto desenvolvido para criar uma página que forneça informações sobre endereço e meteorologia utilizando API [ViaCEP](https://viacep.com.br/) e [Open-Meteo](https://open-meteo.com/)
 
-Para acessar o projeto [CLIQUE AQUI]()
+Para acessar o projeto [CLIQUE AQUI](https://dazzling-custard-4f6da6.netlify.app/) <br>
+Ou Acesse o site https://dazzling-custard-4f6da6.netlify.app/
 
 ## 🔖 Layout
 
